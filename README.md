@@ -2,6 +2,22 @@
 
 Geonworks VENOM HE(60HE / 80HE / 87HE) 키보드의 실제 사용자 리뷰 23건을 수집·분석한 발표용 슬라이드 덱입니다.
 
+## 바로가기 (Live)
+
+- 슬라이드 덱: **https://hyeok9865.github.io/venom-keyboard-review-deck/**
+- 리뷰 대시보드: https://hyeok9865.github.io/venom-keyboard-review-deck/research/venom_keyboard_reviews.html
+- 조사 보고서: https://github.com/hyeok9865/venom-keyboard-review-deck/blob/main/research/venom_keyboard_review_report.md
+- 리포지토리: https://github.com/hyeok9865/venom-keyboard-review-deck
+
+## 오늘의 산출물 (research/)
+
+| 파일 | 설명 |
+|---|---|
+| `research/venom_keyboard_reviews.csv` | 베놈 키보드 리뷰 원자료 23건 |
+| `research/venom_keyboard_reviews.html` | 리뷰 대시보드(SVG 시각화, 오프라인 동작) |
+| `research/venom_keyboard_review_report.md` | 리뷰 조사 보고서 |
+| `research/ragdoll_cat_snacks.csv` | 랙돌 고양이 간식 가성비 후보 조사 |
+
 ## 구성
 - `index.html` — reveal.js 기반 14장 슬라이드 덱
 - `css/theme.css` — 다크 테마

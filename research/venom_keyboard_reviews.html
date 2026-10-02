@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>베놈 키보드 상품리뷰 시각화</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin:0; background:#0d1117; color:#c9d1d9; font-family:'Segoe UI','Malgun Gothic',system-ui,sans-serif; }
+  header { padding:28px 32px 8px; border-bottom:1px solid #21262d; }
+  h1 { margin:0 0 6px; font-size:24px; color:#f0f6fc; }
+  .meta { color:#8b949e; font-size:13px; }
+  .wrap { padding:24px 32px 60px; max-width:1200px; margin:0 auto; }
+  .cards { display:flex; gap:14px; flex-wrap:wrap; margin:8px 0 30px; }
+  .card { background:#161b22; border:1px solid #30363d; border-radius:10px; padding:16px 22px; min-width:130px; }
+  .big { font-size:26px; font-weight:700; }
+  .sub { color:#8b949e; font-size:12px; margin-top:4px; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+  @media (max-width:900px) { .grid { grid-template-columns:1fr; } }
+  .panel { background:#161b22; border:1px solid #30363d; border-radius:10px; padding:18px 20px; }
+  .panel h2 { margin:0 0 4px; font-size:16px; color:#f0f6fc; }
+  .panel .hint { color:#8b949e; font-size:12px; margin-bottom:12px; }
+  .full { grid-column:1 / -1; }
+  .legend { font-size:12px; color:#8b949e; margin-top:6px; }
+  table { width:100%; border-collapse:collapse; font-size:13px; }
+  th, td { padding:8px 10px; border-bottom:1px solid #21262d; text-align:left; vertical-align:top; }
+  th { color:#8b949e; font-weight:600; position:sticky; top:0; background:#161b22; }
+  a { color:#58a6ff; text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .scroll { max-height:460px; overflow:auto; }
+  .tag { display:inline-block; padding:2px 8px; border-radius:10px; font-size:11px; }
+  .g { background:#1a3a24; color:#3fb950; }
+  .r { background:#3a1a1a; color:#f85149; }
+  .summary { line-height:1.7; font-size:14px; }
+  .summary b { color:#f0f6fc; }
+</style>
+</head>
+<body>
+<header>
+  <h1>베놈 키보드 (Geonworks VENOM HE) 상품리뷰 시각화</h1>
+  <div class="meta">출처: 네이버블로그 리서치 + 번개장터/쿠팡 + YouTube/RTINGS/퀘이사존 &nbsp;|&nbsp; 수집일 2026-10-02 &nbsp;|&nbsp; 리뷰 기록 23건</div>
+</header>
+<div class="wrap">
+  <div class="cards"><div class="card"><div class="big" style="color:#58a6ff">8 kHz</div><div class="sub">폴링레이트</div></div>
+<div class="card"><div class="big" style="color:#3fb950">0.13 ms</div><div class="sub">종합 응답속도</div></div>
+<div class="card"><div class="big" style="color:#d29922">480 MHz</div><div class="sub">MCU (기존 144)</div></div>
+<div class="card"><div class="big" style="color:#bc8cff">0.005 mm</div><div class="sub">입력 감도 단위</div></div>
+<div class="card"><div class="big" style="color:#f778ba">0.1 mm</div><div class="sub">추천 입력지점</div></div></div>
+
+  <div class="grid">
+    <div class="panel">
+      <h2>긍정 포인트 빈도 <span class="tag g">40</span></h2>
+      <div class="hint">리뷰에서 언급된 강점 (중복 집계)</div>
+      <svg viewBox="0 0 800 282" width="100%" style="max-width:800px">
+<text x="200" y="26" text-anchor="end" font-size="13" fill="#c9d1d9">조립/커스텀 자유도</text>
+<rect x="210" y="12" width="520" height="20" rx="4" fill="#3fb950"/>
+<text x="738" y="27" font-size="12" fill="#8b949e">10건</text>
+<text x="200" y="60" text-anchor="end" font-size="13" fill="#c9d1d9">8K/응답속도</text>
+<rect x="210" y="46" width="416" height="20" rx="4" fill="#3fb950"/>
+<text x="634" y="61" font-size="12" fill="#8b949e">8건</text>
+<text x="200" y="94" text-anchor="end" font-size="13" fill="#c9d1d9">래피드트리거/브레이킹</text>
+<rect x="210" y="80" width="364" height="20" rx="4" fill="#3fb950"/>
+<text x="582" y="95" font-size="12" fill="#8b949e">7건</text>
+<text x="200" y="128" text-anchor="end" font-size="13" fill="#c9d1d9">저소음/타건감</text>
+<rect x="210" y="114" width="260" height="20" rx="4" fill="#3fb950"/>
+<text x="478" y="129" font-size="12" fill="#8b949e">5건</text>
+<text x="200" y="162" text-anchor="end" font-size="13" fill="#c9d1d9">RGB/LED 감성</text>
+<rect x="210" y="148" width="208" height="20" rx="4" fill="#3fb950"/>
+<text x="426" y="163" font-size="12" fill="#8b949e">4건</text>
+<text x="200" y="196" text-anchor="end" font-size="13" fill="#c9d1d9">마감/디자인</text>
+<rect x="210" y="182" width="104" height="20" rx="4" fill="#3fb950"/>
+<text x="322" y="197" font-size="12" fill="#8b949e">2건</text>
+<text x="200" y="230" text-anchor="end" font-size="13" fill="#c9d1d9">가성비</text>
+<rect x="210" y="216" width="104" height="20" rx="4" fill="#3fb950"/>
+<text x="322" y="231" font-size="12" fill="#8b949e">2건</text>
+<text x="200" y="264" text-anchor="end" font-size="13" fill="#c9d1d9">손목 편안함</text>
+<rect x="210" y="250" width="104" height="20" rx="4" fill="#3fb950"/>
+<text x="322" y="265" font-size="12" fill="#8b949e">2건</text>
+</svg>
+    </div>
+    <div class="panel">
+      <h2>부정/아쉬움 포인트 빈도 <span class="tag r">18</span></h2>
+      <div class="hint">리뷰에서 지적된 단점 (중복 집계)</div>
+      <svg viewBox="0 0 800 248" width="100%" style="max-width:800px">
+<text x="200" y="26" text-anchor="end" font-size="13" fill="#c9d1d9">60% 배열 적응</text>
+<rect x="210" y="12" width="520" height="20" rx="4" fill="#f85149"/>
+<text x="738" y="27" font-size="12" fill="#8b949e">4건</text>
+<text x="200" y="60" text-anchor="end" font-size="13" fill="#c9d1d9">키캡 호환 제약</text>
+<rect x="210" y="46" width="520" height="20" rx="4" fill="#f85149"/>
+<text x="738" y="61" font-size="12" fill="#8b949e">4건</text>
+<text x="200" y="94" text-anchor="end" font-size="13" fill="#c9d1d9">비용 과다</text>
+<rect x="210" y="80" width="520" height="20" rx="4" fill="#f85149"/>
+<text x="738" y="95" font-size="12" fill="#8b949e">4건</text>
+<text x="200" y="128" text-anchor="end" font-size="13" fill="#c9d1d9">도터보드 파손/조립난도</text>
+<rect x="210" y="114" width="390" height="20" rx="4" fill="#f85149"/>
+<text x="608" y="129" font-size="12" fill="#8b949e">3건</text>
+<text x="200" y="162" text-anchor="end" font-size="13" fill="#c9d1d9">설정/매뉴얼 난해</text>
+<rect x="210" y="148" width="130" height="20" rx="4" fill="#f85149"/>
+<text x="348" y="163" font-size="12" fill="#8b949e">1건</text>
+<text x="200" y="196" text-anchor="end" font-size="13" fill="#c9d1d9">통울림</text>
+<rect x="210" y="182" width="130" height="20" rx="4" fill="#f85149"/>
+<text x="348" y="197" font-size="12" fill="#8b949e">1건</text>
+<text x="200" y="230" text-anchor="end" font-size="13" fill="#c9d1d9">ABS 번들거림</text>
+<rect x="210" y="216" width="130" height="20" rx="4" fill="#f85149"/>
+<text x="348" y="231" font-size="12" fill="#8b949e">1건</text>
+</svg>
+    </div>
+
+    <div class="panel full">
+      <h2>제작/구매 비용대 비교 (원)</h2>
+      <div class="hint">블로그 실빌드·중고·단품 가격 혼합. 부품 구성에 따라 편차 큼</div>
+      <svg viewBox="0 0 878 360" width="100%" style="max-width:878px">
+<defs><linearGradient id="cg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#58a6ff"/><stop offset="100%" stop-color="#1f6feb"/></linearGradient></defs>
+<rect x="70" y="40" width="70" height="260" rx="5" fill="url(#cg)"/>
+<text x="105.0" y="32" text-anchor="middle" font-size="12" fill="#58a6ff">288,705</text>
+<text x="105.0" y="318" text-anchor="middle" font-size="11" fill="#8b949e">60HE</text>
+<text x="105.0" y="332" text-anchor="middle" font-size="11" fill="#8b949e">실빌드</text>
+<text x="105.0" y="346" text-anchor="middle" font-size="11" fill="#8b949e">(블로그)</text>
+<rect x="166" y="48" width="70" height="252" rx="5" fill="url(#cg)"/>
+<text x="201.0" y="40" text-anchor="middle" font-size="12" fill="#58a6ff">280,000</text>
+<text x="201.0" y="318" text-anchor="middle" font-size="11" fill="#8b949e">87HE</text>
+<text x="201.0" y="332" text-anchor="middle" font-size="11" fill="#8b949e">v2</text>
+<text x="201.0" y="346" text-anchor="middle" font-size="11" fill="#8b949e">중고</text>
+<text x="201.0" y="360" text-anchor="middle" font-size="11" fill="#8b949e">완성품</text>
+<rect x="262" y="165" width="70" height="135" rx="5" fill="url(#cg)"/>
+<text x="297.0" y="157" text-anchor="middle" font-size="12" fill="#58a6ff">150,000</text>
+<text x="297.0" y="318" text-anchor="middle" font-size="11" fill="#8b949e">60HE</text>
+<text x="297.0" y="332" text-anchor="middle" font-size="11" fill="#8b949e">중고</text>
+<text x="297.0" y="346" text-anchor="middle" font-size="11" fill="#8b949e">완성품</text>
+<rect x="358" y="183" width="70" height="117" rx="5" fill="url(#cg)"/>
+<text x="393.0" y="175" text-anchor="middle" font-size="12" fill="#58a6ff">130,000</text>
+<text x="393.0" y="318" text-anchor="middle" font-size="11" fill="#8b949e">60HE</text>
+<text x="393.0" y="332" text-anchor="middle" font-size="11" fill="#8b949e">부품(기판+보강+흡음)</text>
+<rect x="454" y="200" width="70" height="100" rx="5" fill="url(#cg)"/>
+<text x="489.0" y="192" text-anchor="middle" font-size="12" fill="#58a6ff">112,000</text>
+<text x="489.0" y="318" text-anchor="middle" font-size="11" fill="#8b949e">60HE</text>
+<text x="489.0" y="332" text-anchor="middle" font-size="11" fill="#8b949e">완제품(블로그)</text>
+<rect x="550" y="210" width="70" height="90" rx="5" fill="url(#cg)"/>
+<text x="585.0" y="202" text-anchor="middle" font-size="12" fill="#58a6ff">100,000</text>
+<text x="585.0" y="318" text-anchor="middle" font-size="11" fill="#8b949e">80HE</text>
+<text x="585.0" y="332" text-anchor="middle" font-size="11" fill="#8b949e">F12</text>
+<text x="585.0" y="346" text-anchor="middle" font-size="11" fill="#8b949e">PCB</text>
+<text x="585.0" y="360" text-anchor="middle" font-size="11" fill="#8b949e">정가</text>
+<rect x="646" y="218" width="70" height="82" rx="5" fill="url(#cg)"/>
+<text x="681.0" y="210" text-anchor="middle" font-size="12" fill="#58a6ff">92,000</text>
+<text x="681.0" y="318" text-anchor="middle" font-size="11" fill="#8b949e">60HE</text>
+<text x="681.0" y="332" text-anchor="middle" font-size="11" fill="#8b949e">PCB</text>
+<text x="681.0" y="346" text-anchor="middle" font-size="11" fill="#8b949e">단품</text>
+<rect x="742" y="232" width="70" height="68" rx="5" fill="url(#cg)"/>
+<text x="777.0" y="224" text-anchor="middle" font-size="12" fill="#58a6ff">76,000</text>
+<text x="777.0" y="318" text-anchor="middle" font-size="11" fill="#8b949e">60HE</text>
+<text x="777.0" y="332" text-anchor="middle" font-size="11" fill="#8b949e">PCB(입문자)</text>
+<line x1="60" y1="300" x2="858" y2="300" stroke="#30363d"/>
+</svg>
+    </div>
+
+    <div class="panel">
+      <h2>리뷰 출처 분포</h2>
+      <div class="hint">채널별 리뷰 건수</div>
+      <svg viewBox="0 0 800 282" width="100%" style="max-width:800px">
+<text x="200" y="26" text-anchor="end" font-size="13" fill="#c9d1d9">네이버 블로그</text>
+<rect x="210" y="12" width="520" height="20" rx="4" fill="#58a6ff"/>
+<text x="738" y="27" font-size="12" fill="#8b949e">13건</text>
+<text x="200" y="60" text-anchor="end" font-size="13" fill="#c9d1d9">번개장터(중고)</text>
+<rect x="210" y="46" width="120" height="20" rx="4" fill="#58a6ff"/>
+<text x="338" y="61" font-size="12" fill="#8b949e">3건</text>
+<text x="200" y="94" text-anchor="end" font-size="13" fill="#c9d1d9">YouTube/영상</text>
+<rect x="210" y="80" width="80" height="20" rx="4" fill="#58a6ff"/>
+<text x="298" y="95" font-size="12" fill="#8b949e">2건</text>
+<text x="200" y="128" text-anchor="end" font-size="13" fill="#c9d1d9">기타 블로그</text>
+<rect x="210" y="114" width="40" height="20" rx="4" fill="#58a6ff"/>
+<text x="258" y="129" font-size="12" fill="#8b949e">1건</text>
+<text x="200" y="162" text-anchor="end" font-size="13" fill="#c9d1d9">RTINGS</text>
+<rect x="210" y="148" width="40" height="20" rx="4" fill="#58a6ff"/>
+<text x="258" y="163" font-size="12" fill="#8b949e">1건</text>
+<text x="200" y="196" text-anchor="end" font-size="13" fill="#c9d1d9">커뮤니티(퀘이사존)</text>
+<rect x="210" y="182" width="40" height="20" rx="4" fill="#58a6ff"/>
+<text x="258" y="197" font-size="12" fill="#8b949e">1건</text>
+<text x="200" y="230" text-anchor="end" font-size="13" fill="#c9d1d9">쿠팡/블로그</text>
+<rect x="210" y="216" width="40" height="20" rx="4" fill="#58a6ff"/>
+<text x="258" y="231" font-size="12" fill="#8b949e">1건</text>
+<text x="200" y="264" text-anchor="end" font-size="13" fill="#c9d1d9">GeekNews</text>
+<rect x="210" y="250" width="40" height="20" rx="4" fill="#58a6ff"/>
+<text x="258" y="265" font-size="12" fill="#8b949e">1건</text>
+</svg>
+    </div>
+
+    <div class="panel">
+      <h2>요약 인사이트</h2>
+      <div class="summary">
+        ・<b>성능 강점</b>: 래피드트리거 + 8kHz + 0.13ms 응답. FPS 브레이킹 체감이 <b>7건</b>으로 가장 많이 언급됨.<br>
+        ・<b>최대 약점</b>: 60% 배열 적응(<b>4건</b>), 키캡 호환 제약(<b>4건</b>), 설정/매뉴얼 난해(<b>1건</b>).<br>
+        ・<b>조립 리스크</b>: 도터보드 파손·스테빌 난이도 사례 존재(<b>3건</b>). 첫 조립 4시간 소요 사례.<br>
+        ・<b>비용</b>: 완제품 11~15만원 / 실빌드 13~29만원 / 중고 15~28만원. PCB 단품 7.6~9.2만원.<br>
+        ・<b>신뢰도</b>: 4.97/275개(블로그 인용), 5.0/2건(번개장터). 해외 boardzy·RTINGS 측정 리뷰 존재.<br>
+        ・<b>주의</b>: 3번 리뷰는 광고성 문구 다수로 과장 가능성.
+      </div>
+    </div>
+
+    <div class="panel full">
+      <h2>원문 리뷰 목록 (23건)</h2>
+      <div class="hint">URL 클릭 시 원문 이동</div>
+      <div class="scroll">
+      <table>
+        <thead><tr><th>#</th><th>모델</th><th>리뷰유형</th><th>출처</th><th>가격/비용</th><th>평점/리뷰수</th><th>링크</th></tr></thead>
+        <tbody>
+        <tr><td>1</td><td>VENOM60HE RGB 6.25U/7U</td><td>상세 리뷰+빌드 가이드</td><td>네이버블로그</td><td>H60 알루 8만원대 (holy60은 20만원대)</td><td>-</td><td><a href="https://blog.naver.com/ojinbyeol/224314827993" target="_blank">원문</a></td></tr>
+<tr><td>2</td><td>VENOM60HE 7U</td><td>내돈내산 제작 후기</td><td>네이버블로그</td><td>본체 272305원 + 윤활도구/케이블 16400원 = 288705원</td><td>-</td><td><a href="https://blog.naver.com/happygamer7966/224389794056" target="_blank">원문</a></td></tr>
+<tr><td>3</td><td>VENOM60HE RGB 6.25U</td><td>3개월 장기 사용기</td><td>네이버블로그</td><td>112000원</td><td>평점 4.97 리뷰 275개(작성자 인용)</td><td><a href="https://blog.naver.com/jrjrjr5562/224409082302" target="_blank">원문</a></td></tr>
+<tr><td>4</td><td>VENOM60HE 6.25U</td><td>3주 실사용기</td><td>네이버블로그</td><td>92000원</td><td>가성비 3/5 품질 4/5</td><td><a href="https://blog.naver.com/ballay58/224331901782" target="_blank">원문</a></td></tr>
+<tr><td>5</td><td>VENOM60HE RGB</td><td>솔직 실사용 후기</td><td>네이버블로그</td><td>지온웍스+FROG MINI LEGGERA 조립 구성</td><td>-</td><td><a href="https://blog.naver.com/panjulove/224133737679" target="_blank">원문</a></td></tr>
+<tr><td>6</td><td>VENOM60HE 6.25U PCB</td><td>입문자 사용 후기</td><td>네이버블로그</td><td>76000원</td><td>-</td><td><a href="https://blog.naver.com/ebrkhgyxwg/224353203991" target="_blank">원문</a></td></tr>
+<tr><td>7</td><td>VENOM80HE F12 RGB 6.25U 87 TKL</td><td>조립 실패담(리스크)</td><td>네이버블로그</td><td>PCB+키트+스위치+흡음재 별도 구매(금액 미기재)</td><td>-</td><td><a href="https://blog.naver.com/717582/224347959026" target="_blank">원문</a></td></tr>
+<tr><td>8</td><td>VENOM60HE</td><td>초저가 조립 후기</td><td>네이버블로그</td><td>기판/보강판/흡음재 130000원대</td><td>-</td><td><a href="https://blog.naver.com/legend1024/224333000354" target="_blank">원문</a></td></tr>
+<tr><td>9</td><td>VENOM60HE 7U</td><td>스위치 교체 조립기</td><td>네이버블로그</td><td>-</td><td>https://blog.naver.com/tomeno00/224309364983</td><td><a href="2026-10-02" target="_blank">원문</a></td></tr>
+<tr><td>10</td><td>VENOM60HE</td><td>주문제작 후기</td><td>네이버블로그</td><td>공방 주문제작(부품별 상이)</td><td>-</td><td><a href="https://blog.naver.com/yonghoonplz/224322565639" target="_blank">원문</a></td></tr>
+<tr><td>11</td><td>VENOM60HE</td><td>올블랙 주문제작 후기</td><td>네이버블로그</td><td>주문제작 견적 상담제</td><td>-</td><td><a href="https://blog.naver.com/yonghoonplz/224261035804" target="_blank">원문</a></td></tr>
+<tr><td>12</td><td>VENOM60HE/80HE</td><td>커스텀 공방 후기</td><td>번개장터</td><td>150000원</td><td>거래후기 긍정</td><td><a href="https://m.bunjang.co.kr/products/423927453" target="_blank">원문</a></td></tr>
+<tr><td>13</td><td>VENOM60HE RGB V2 6.25U</td><td>중고 판매+사용평</td><td>번개장터 글로벌</td><td>USD 152.35</td><td>평점 5.0 리뷰 2 판매 2</td><td><a href="https://globalbunjang.com/product/421151709" target="_blank">원문</a></td></tr>
+<tr><td>14</td><td>VENOM87HE v2 RGB</td><td>중고 실사용</td><td>번개장터</td><td>280000원</td><td>거래후기 긍정</td><td><a href="https://m.bunjang.co.kr/products/425531647" target="_blank">원문</a></td></tr>
+<tr><td>15</td><td>VENOM60HE</td><td>동영상 리뷰(해외)</td><td>YouTube boardzy</td><td>PCB 65달러(약 9만원)</td><td>조회 45.7K 좋아요 941</td><td><a href="https://www.youtube.com/watch?v=-t5EM2-_JEg" target="_blank">원문</a></td></tr>
+<tr><td>16</td><td>VENOM60HE</td><td>프로게이머 리뷰</td><td>YouTube/보텍스</td><td>-</td><td>-</td><td><a href="https://vortexgaming.io/postdetail/491968" target="_blank">원문</a></td></tr>
+<tr><td>17</td><td>VENOM60HE vs 블랙위도우V4</td><td>지연시간 비교 리뷰</td><td>네이버블로그</td><td>-</td><td>-</td><td><a href="https://mudidi.tistory.com/3166" target="_blank">원문</a></td></tr>
+<tr><td>18</td><td>VENOM60/80HE</td><td>조립 후기 2편</td><td>블로그</td><td>TigerLite F12+기판+스위치+키캡</td><td>-</td><td><a href="https://blog.beginms.com/726/" target="_blank">원문</a></td></tr>
+<tr><td>19</td><td>VENOM60HE</td><td>해외 종합 리뷰</td><td>RTINGS</td><td>-</td><td>-</td><td><a href="https://www.rtings.com/keyboard/reviews/geonworks/venom-60-he" target="_blank">원문</a></td></tr>
+<tr><td>20</td><td>VENOM60HE</td><td>커스텀 빌드 종합</td><td>퀘이사존</td><td>LED스트립+컨트롤러 약 11달러</td><td>-</td><td><a href="https://quasarzone.com/bbs/qf_input/views/393750" target="_blank">원문</a></td></tr>
+<tr><td>21</td><td>VENOM80HE F12 PCB</td><td>양산형 리뷰</td><td>쿠팡/블로그</td><td>100000원 정가 표기</td><td>평점 0.0</td><td><a href="https://thaian.tistory.com/95" target="_blank">원문</a></td></tr>
+<tr><td>22</td><td>VENOM60HE</td><td>검색 트렌드 요약</td><td>네이버블로그</td><td>제작비 20~30만원이 다수</td><td>-</td><td><a href="https://search.naver.com/search.naver" target="_blank">원문</a></td></tr>
+<tr><td>23</td><td>VENOM 시리즈</td><td>긱뉴스(GeekNews) 검색</td><td>GeekNews</td><td>-</td><td>-</td><td><a href="https://news.hada.io" target="_blank">원문</a></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
