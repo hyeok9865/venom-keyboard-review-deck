@@ -1,0 +1,229 @@
+/* ===== 베놈 키보드 리뷰 덱 테마 ===== */
+:root {
+  --bg: #0d1117;
+  --panel: rgba(22, 27, 34, 0.82);
+  --panel-solid: #161b22;
+  --border: #30363d;
+  --fg: #c9d1d9;
+  --fg-strong: #f0f6fc;
+  --muted: #8b949e;
+  --green: #3fb950;
+  --red: #f85149;
+  --blue: #58a6ff;
+  --purple: #bc8cff;
+  --yellow: #d29922;
+  --pink: #f778ba;
+  --cyan: #39c5cf;
+}
+
+.reveal {
+  font-family: "Pretendard", "Malgun Gothic", "Segoe UI", system-ui, sans-serif;
+  color: var(--fg);
+  font-size: 30px;
+}
+
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal .slides section {
+  height: 100%;
+  padding: 26px 34px;
+}
+
+/* 배경 */
+html, body {
+  background: #0d1117;
+}
+.reveal-viewport {
+  background:
+    radial-gradient(1200px 700px at 82% -10%, rgba(248, 81, 73, 0.16), transparent 60%),
+    radial-gradient(1000px 640px at 10% 110%, rgba(63, 185, 80, 0.16), transparent 60%),
+    linear-gradient(160deg, #0d1117 0%, #0b0f14 100%);
+}
+
+.reveal .slide-background-content {
+  background-image:
+    linear-gradient(rgba(48, 54, 61, 0.30) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(48, 54, 61, 0.30) 1px, transparent 1px);
+  background-size: 46px 46px;
+}
+
+/* 타이포 */
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+  color: var(--fg-strong);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-transform: none;
+  margin: 0 0 0.35em;
+  line-height: 1.12;
+}
+.reveal h1 { font-size: 2.5em; }
+.reveal h2 { font-size: 1.7em; }
+.reveal h3 { font-size: 1.12em; }
+.reveal p, .reveal li { line-height: 1.5; }
+.reveal a { color: var(--blue); }
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.44em;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  color: var(--green);
+  text-transform: uppercase;
+  margin-bottom: 0.7em;
+}
+.slide-title {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5em;
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 0.28em;
+  margin-bottom: 0.55em;
+}
+.slide-title .idx {
+  font-size: 0.9em;
+  font-weight: 800;
+  color: var(--green);
+  font-variant-numeric: tabular-nums;
+}
+
+/* 표지 */
+.cover { display: flex; flex-direction: column; justify-content: center; }
+.cover .hero-title {
+  font-size: 3.1em;
+  line-height: 1.05;
+  margin: 0 0 0.2em;
+  background: linear-gradient(92deg, #f0f6fc 20%, var(--green) 55%, var(--pink) 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cover .hero-sub { font-size: 0.72em; color: var(--muted); max-width: 22em; }
+.cover .tags { margin-top: 1em; display: flex; gap: 10px; flex-wrap: wrap; }
+.tag {
+  font-size: 0.42em;
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--panel);
+  color: var(--fg);
+}
+.tag.g { color: var(--green); border-color: rgba(63,185,80,0.5); }
+.tag.r { color: var(--red); border-color: rgba(248,81,73,0.5); }
+.tag.b { color: var(--blue); border-color: rgba(88,166,255,0.5); }
+
+.cover .meta {
+  margin-top: 1.3em;
+  font-size: 0.44em;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  padding-top: 0.9em;
+  max-width: 34em;
+}
+
+/* 카드/그리드 */
+.grid { display: grid; gap: 18px; }
+.grid.c2 { grid-template-columns: 1fr 1fr; }
+.grid.c3 { grid-template-columns: repeat(3, 1fr); }
+.grid.c4 { grid-template-columns: repeat(4, 1fr); }
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px 22px;
+  backdrop-filter: blur(6px);
+}
+.card h3 { margin-bottom: 0.3em; }
+.card .k { color: var(--green); }
+.card.small { padding: 15px 17px; }
+.card.danger h3 { color: var(--red); }
+
+.kpi { text-align: center; }
+.kpi .stat-value {
+  font-size: 2.0em;
+  font-weight: 900;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  color: var(--fg-strong);
+}
+.kpi .stat-label { font-size: 0.46em; color: var(--muted); margin-top: 8px; }
+.kpi.g .stat-value { color: var(--green); }
+.kpi.b .stat-value { color: var(--blue); }
+.kpi.p .stat-value { color: var(--purple); }
+.kpi.y .stat-value { color: var(--yellow); }
+.kpi.r .stat-value { color: var(--red); }
+.kpi.c .stat-value { color: var(--cyan); }
+
+/* 이미지 */
+.chart-img {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #0d1117;
+}
+.chart-frame { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 12px; }
+.caption { font-size: 0.42em; color: var(--muted); margin-top: 8px; }
+
+.two-col { display: grid; grid-template-columns: 1.05fr 1fr; gap: 24px; align-items: center; }
+.two-col.wide-left { grid-template-columns: 1.35fr 1fr; }
+.two-col.wide-right { grid-template-columns: 1fr 1.35fr; }
+
+/* 인용 */
+.quote {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--green);
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin: 12px 0;
+}
+.quote.r { border-left-color: var(--red); }
+.quote p { margin: 0 0 0.35em; font-size: 0.56em; color: var(--fg); }
+.quote .who { font-size: 0.42em; color: var(--muted); }
+
+/* 리스트 */
+.reveal ul.clean { list-style: none; margin-left: 0; }
+.reveal ul.clean li {
+  position: relative;
+  padding-left: 1.1em;
+  font-size: 0.62em;
+  margin-bottom: 0.5em;
+}
+.reveal ul.clean li::before {
+  content: "▹";
+  position: absolute; left: 0; color: var(--green);
+}
+.reveal ul.clean li.neg::before { content: "▹"; color: var(--red); }
+
+/* 표 */
+.reveal table { width: 100%; border-collapse: collapse; font-size: 0.5em; }
+.reveal th, .reveal td { padding: 9px 12px; border-bottom: 1px solid var(--border); text-align: left; }
+.reveal th { color: var(--muted); font-weight: 700; }
+.reveal td:first-child { color: var(--fg-strong); font-weight: 600; }
+.reveal tr.best td { background: rgba(63,185,80,0.10); }
+
+/* 진행바/번호 */
+.reveal .progress { color: var(--green); height: 4px; }
+.reveal .slide-number { background: rgba(13,17,23,0.7); color: var(--muted); font-size: 14px; }
+
+/* 애니메이션 초기상태 */
+.anim { opacity: 0; }
+.chartjs-wrap { position: relative; width: 100%; height: 430px; }
+
+.footer-note {
+  position: absolute;
+  left: 34px;
+  bottom: 14px;
+  font-size: 0.36em;
+  color: var(--muted);
+}
+.badge-affiliate {
+  position: absolute;
+  right: 34px;
+  bottom: 14px;
+  font-size: 0.34em;
+  color: #6e7681;
+  max-width: 22em;
+  text-align: right;
+}

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>베놈 키보드 상품리뷰 조사 — 슬라이드 덱</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/theme/black.css" id="theme">
+<link rel="stylesheet" href="css/theme.css">
+<noscript><style>.anim{opacity:1 !important;}</style></noscript>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+  <!-- 1. 표지 -->
+  <section class="cover" data-background-color="#0d1117">
+    <div class="anim" data-anim="fade-up">
+      <span class="eyebrow">Product Review Research · 2026.10.02</span>
+      <h1 class="hero-title">베놈 키보드<br>상품리뷰 조사</h1>
+      <p class="hero-sub">Geonworks VENOM HE (60HE / 80HE / 87HE) — 실제 사용자 리뷰 23건 기반 성능·가격·장단점 분석</p>
+      <div class="tags">
+        <span class="tag g">8kHz · 0.13ms</span>
+        <span class="tag b">커스텀 플랫폼</span>
+        <span class="tag r">진입장벽 = 비용·조립</span>
+      </div>
+      <div class="meta">
+        조사 채널 · 네이버 블로그 11 / 중고거래 2 / YouTube·RTINGS·퀘이사존 / 쿠팡<br>
+        사용 도구 · naver-blog-research · bunjang-search · coupang-product-search · danawa-price-search
+      </div>
+    </div>
+    <canvas id="cover-canvas" style="position:absolute;inset:0;width:100%;height:100%;z-index:-1;"></canvas>
+  </section>
+
+  <!-- 2. 목차 -->
+  <section>
+    <div class="slide-title"><span class="idx">01</span><h2>목차</h2></div>
+    <div class="grid c2">
+      <div class="card anim" data-anim="fade-up"><h3 class="k">분석</h3>
+        <ul class="clean">
+          <li>제품 개요 — 기판 기반 커스텀</li>
+          <li>핵심 성능 지표</li>
+          <li>리뷰 데이터 개요</li>
+          <li>감성 분석 (긍정/부정)</li>
+        </ul>
+      </div>
+      <div class="card anim" data-anim="fade-up"><h3 class="k">판단</h3>
+        <ul class="clean">
+          <li>가격·비용 구조</li>
+          <li>경쟁 모델 지연시간 비교</li>
+          <li>대표 리뷰 사례</li>
+          <li>구매·빌드 가이드 · 결론</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. 제품 개요 -->
+  <section>
+    <div class="slide-title"><span class="idx">02</span><h2>제품 개요 — 완제품이 아닌 커스텀 플랫폼</h2></div>
+    <p class="anim" data-anim="fade-up" style="font-size:0.6em;color:var(--muted);margin-bottom:0.8em;">
+      베놈의 핵심은 <b style="color:var(--fg-strong)">지온웍스의 자석축(Hall Effect) PCB 기판</b>. 하우징·보강판·스위치·키캡을 사용자가 선택해 조립한다.
+    </p>
+    <div class="grid c3">
+      <div class="card anim" data-anim="fade-up"><h3>VENOM60HE</h3>
+        <p style="font-size:0.5em;color:var(--muted)">60% (61키) · 6.25U/7U</p>
+        <p style="font-size:0.52em">FPS 최우선, 커스텀 자유도 최대, 휴대성 우수</p>
+      </div>
+      <div class="card anim" data-anim="fade-up"><h3>VENOM80HE / 87HE</h3>
+        <p style="font-size:0.5em;color:var(--muted)">TKL (87키) · F12</p>
+        <p style="font-size:0.52em">방향키 포함, 게임+일상 겸용, 타이거라이트 인기</p>
+      </div>
+      <div class="card anim" data-anim="fade-up"><h3>VENOM 60HE RGB V2</h3>
+        <p style="font-size:0.5em;color:var(--muted)">60% · 응답 0.13ms</p>
+        <p style="font-size:0.52em">성능·감성 균형, 야간 LED 시인성 강화</p>
+      </div>
+    </div>
+    <div class="card anim" data-anim="fade-up" style="margin-top:18px">
+      <p style="font-size:0.52em;margin:0">교체 가능한 <b class="k">GH60 호환 하우징</b> · 웹 기반 <b class="k">venom.how</b> 설정·펌웨어 업데이트 · 공방 주문제작 생태계 활발</p>
+    </div>
+  </section>
+
+  <!-- 4. 핵심 성능 지표 -->
+  <section>
+    <div class="slide-title"><span class="idx">03</span><h2>핵심 성능 지표</h2></div>
+    <div class="two-col wide-right" style="align-items:start">
+      <div>
+        <div class="grid c2" style="gap:14px">
+          <div class="card kpi g anim" data-anim="fade-up"><div class="stat-value" data-count="8" data-suffix="">0</div><div class="stat-label">폴링레이트 (kHz)</div></div>
+          <div class="card kpi b anim" data-anim="fade-up"><div class="stat-value" data-count="0.13" data-decimals="2">0</div><div class="stat-label">종합 응답속도 (ms)</div></div>
+          <div class="card kpi p anim" data-anim="fade-up"><div class="stat-value" data-count="480" data-suffix="">0</div><div class="stat-label">MCU 클럭 (MHz, 기존 144)</div></div>
+          <div class="card kpi y anim" data-anim="fade-up"><div class="stat-value" data-count="0.005" data-decimals="3">0</div><div class="stat-label">입력 감도 단위 (mm)</div></div>
+          <div class="card kpi c anim" data-anim="fade-up"><div class="stat-value" data-count="0.1" data-decimals="1">0</div><div class="stat-label">추천 입력지점 (mm)</div></div>
+          <div class="card kpi r anim" data-anim="fade-up"><div class="stat-value" data-count="23" data-suffix="">0</div><div class="stat-label">수집 리뷰 기록</div></div>
+        </div>
+        <p class="caption anim" data-anim="fade-up">기본 설정에서는 일반 게이밍 키보드보다 느릴 수 있음(입력지연 17~19ms). 입력지점·래피드트리거를 적극 설정해야 성능이 발휘된다.</p>
+      </div>
+      <div class="chart-frame anim" data-anim="fade-left">
+        <img class="chart-img" src="assets/charts/radar.png" alt="베놈 60HE 종합 프로파일 레이더">
+        <div class="caption">리뷰 텍스트 기반 정성 평가 (성능·자유도 최상, 조립 편의성 낮음)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. 리뷰 데이터 개요 (Chart.js) -->
+  <section>
+    <div class="slide-title"><span class="idx">04</span><h2>리뷰 데이터 개요</h2></div>
+    <div class="two-col" style="align-items:start">
+      <div class="chartjs-wrap anim" data-anim="fade-up"><canvas id="sourceChart"></canvas></div>
+      <div>
+        <div class="grid c2" style="gap:14px">
+          <div class="card kpi b"><div class="stat-value" style="font-size:1.6em">23</div><div class="stat-label">리뷰 기록</div></div>
+          <div class="card kpi g"><div class="stat-value" style="font-size:1.6em">48%</div><div class="stat-label">네이버 블로그 비중</div></div>
+          <div class="card kpi y"><div class="stat-value" style="font-size:1.6em">8</div><div class="stat-label">채널 종류</div></div>
+          <div class="card kpi p"><div class="stat-value" style="font-size:1.6em">6</div><div class="stat-label">원문 정독 건수</div></div>
+        </div>
+        <ul class="clean anim" data-anim="fade-up" style="margin-top:14px">
+          <li>블로그 검색 3회 + 원문 6건 정독</li>
+          <li>중고거래·커뮤니티로 실거래가 교차 확인</li>
+          <li>해외 측정 리뷰(RTINGS·boardzy) 병행</li>
+          <li class="neg">GeekNews는 관련 게시물 0건(부적합)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. 감성 분석 -->
+  <section>
+    <div class="slide-title"><span class="idx">05</span><h2>감성 분석 — 긍정 vs 부정</h2></div>
+    <div class="chart-frame anim" data-anim="zoom-in">
+      <img class="chart-img" src="assets/charts/posneg.png" alt="긍정/부정 포인트 빈도">
+    </div>
+    <p class="caption anim" data-anim="fade-up">긍정은 <b style="color:var(--green)">조립/커스텀 자유도(10)</b>·<b style="color:var(--green)">8K(8)</b>·<b style="color:var(--green)">래피드트리거(7)</b> 순. 부정은 <b style="color:var(--red)">60% 배열 적응·키캡 호환·비용 과다(각 4)</b>가 대표적.</p>
+  </section>
+
+  <!-- 7. 가격 -->
+  <section>
+    <div class="slide-title"><span class="idx">06</span><h2>가격·비용 구조</h2></div>
+    <div class="two-col wide-left" style="align-items:start">
+      <div class="chart-frame anim" data-anim="fade-right">
+        <img class="chart-img" src="assets/charts/price.png" alt="제작·구매 비용대 비교">
+      </div>
+      <div>
+        <ul class="clean anim" data-anim="fade-up">
+          <li>PCB 단품 <b class="k">7.6만 ~ 9.2만 원</b></li>
+          <li>완제품·중고 <b class="k">11만 ~ 28만 원</b></li>
+          <li>부품 전체 실빌드 <b class="k">13만 ~ 29만 원</b></li>
+          <li class="neg">동일 모델도 구성에 따라 최대 3~4배 차이</li>
+        </ul>
+        <div class="card small" style="margin-top:12px">
+          <p style="font-size:0.46em;margin:0;color:var(--muted)">“이동키 입력 해제 속도”가 브레이킹 체감을 바꾼다 — happygamer7966, 총 지출 288,705원</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. 지연시간 비교 -->
+  <section>
+    <div class="slide-title"><span class="idx">07</span><h2>경쟁 모델 지연시간 비교</h2></div>
+    <div class="two-col wide-left" style="align-items:start">
+      <div class="chart-frame anim" data-anim="fade-right">
+        <img class="chart-img" src="assets/charts/latency.png" alt="지연시간 비교">
+      </div>
+      <div>
+        <ul class="clean anim" data-anim="fade-up">
+          <li>기본값은 블랙위도우보다 느림(17~19ms)</li>
+          <li>입력지점 0.1mm 설정 시 <b class="k">10ms 이하</b></li>
+          <li>해제 지연은 래피드트리거로 <b class="k">약 10ms</b>까지</li>
+          <li>우팅 80HE 대비 약 <b class="k">1ms</b> 빠름 (boardzy)</li>
+        </ul>
+        <p class="caption anim" data-anim="fade-up">→ “수치상 최강”과 “체감 차이는 조건부”가 공존. 설정 최적화가 결과를 좌우한다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. 대표 리뷰 사례 -->
+  <section>
+    <div class="slide-title"><span class="idx">08</span><h2>대표 리뷰 사례</h2></div>
+    <div class="grid c2">
+      <div class="anim" data-anim="fade-up">
+        <div class="quote"><p>“이동키 입력이 얼마나 빠르게 해제되느냐에 따라 브레이킹 체감이 달라진다. 기존 키보드보다 확실히 체감됐다.”</p><div class="who">happygamer7966 · 발로란트 유저 직접 제작</div></div>
+        <div class="quote r"><p>“J12 도터보드를 빼서 꾹 눌렀더니 분리가 났다. 처음 하시는 분들 이런 실수 하지 말길.”</p><div class="who">717582 · 조립 리스크 사례</div></div>
+      </div>
+      <div class="anim" data-anim="fade-up">
+        <div class="quote r"><p>“매뉴얼이 간단해 초보자가 펌웨어·레이어 설정 시 추가 학습이 필요하다. RGB 메뉴도 직관적이지 않다.”</p><div class="who">ballay58 · 3주 실사용기</div></div>
+        <div class="quote"><p>“우팅 대비 약 1ms 빠름. 성능·소프트웨어 비판할 게 없다. 다만 키보드 입력은 수확체감 영역.”</p><div class="who">boardzy · YouTube 해외 리뷰</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. 구매/빌드 가이드 -->
+  <section>
+    <div class="slide-title"><span class="idx">09</span><h2>구매·빌드 가이드</h2></div>
+    <table class="anim" data-anim="fade-up">
+      <thead><tr><th>예산</th><th>구성</th><th>예상 비용</th><th>대상</th></tr></thead>
+      <tbody>
+        <tr><td>최소</td><td>PCB + 저가 GH60 하우징 + 기존 부품 재사용</td><td>13~16만</td><td>부품 보유 커스텀러</td></tr>
+        <tr class="best"><td>균형 (권장)</td><td>PCB + FR4/알루 보강판 + RAW HE + 중급 키캡</td><td>20~23만</td><td>입문~중급</td></tr>
+        <tr><td>프리미엄</td><td>Tofu60 Redux 알루 + 고급 키캡 + 공방 조립</td><td>28~30만</td><td>완성도 중시</td></tr>
+        <tr><td>간편</td><td>80HE F12 PCB + 타이거라이트 키트</td><td>10만대</td><td>방향키 필요</td></tr>
+      </tbody>
+    </table>
+    <div class="grid c3 anim" data-anim="fade-up" style="margin-top:16px">
+      <div class="card small"><h3 style="font-size:0.9em">6.25U vs 7U</h3><p style="font-size:0.48em">키캡 교체 편의 → 6.25U / 감성·미학 → 7U(조립난도↑)</p></div>
+      <div class="card small"><h3 style="font-size:0.9em">60HE vs 80/87HE</h3><p style="font-size:0.48em">FPS 몰입·휴대 → 60HE / 방향키·일상 → TKL</p></div>
+      <div class="card small"><h3 style="font-size:0.9em">리스크 관리</h3><p style="font-size:0.48em">입력지점 0.1~0.2mm부터 / 도터보드 무리한 압착 금지</p></div>
+    </div>
+  </section>
+
+  <!-- 11. 결론 -->
+  <section>
+    <div class="slide-title"><span class="idx">10</span><h2>결론 및 시사점</h2></div>
+    <div class="grid c2">
+      <div class="card anim" data-anim="fade-up"><h3 class="k">성능 최상위, 체감은 조건부</h3><p style="font-size:0.5em">8kHz·0.13ms는 수치상 최강이지만 설정·스위치·마운트에 따라 체감이 갈린다.</p></div>
+      <div class="card anim" data-anim="fade-up"><h3 class="k">본질은 커스텀 플랫폼</h3><p style="font-size:0.5em">만족도는 부품 선택과 조립 품질에서 결정. 커스텀을 즐기는 사용자에게 최적.</p></div>
+      <div class="card danger anim" data-anim="fade-up"><h3>진입장벽 = 비용·난이도</h3><p style="font-size:0.5em">20~30만 원 지출과 조립 리스크. 입문자는 완성품·중고·공방이 현실적 대안.</p></div>
+      <div class="card anim" data-anim="fade-up"><h3 class="k">모델 선택이 핵심</h3><p style="font-size:0.5em">60% 배열 적응 문제 반복 지적 → 방향키 활용도 높으면 80/87HE가 안전.</p></div>
+    </div>
+    <div class="card anim" data-anim="fade-up" style="margin-top:16px">
+      <p style="font-size:0.52em;margin:0">한 줄 결론 — <b class="k">FPS 성능과 커스텀 자유도를 동시에 원하는 경험자</b>에게 최상위 후보. 단, 첫 조립은 공식 가이드와 리스크 관리가 전제.</p>
+    </div>
+  </section>
+
+  <!-- 12. 한계 및 유의 -->
+  <section>
+    <div class="slide-title"><span class="idx">11</span><h2>한계 및 유의사항</h2></div>
+    <div class="grid c2">
+      <div class="card anim" data-anim="fade-up"><h3>데이터 한계</h3>
+        <ul class="clean">
+          <li class="neg">가격·재고·평점은 게시 시점 기준, 실시간 변동</li>
+          <li class="neg">일부 블로그는 광고성/협찬 가능성 → 긍정 편향</li>
+          <li class="neg">국내 블로그·중고 중심으로 표본 편중</li>
+        </ul>
+      </div>
+      <div class="card anim" data-anim="fade-up"><h3>해석 주의</h3>
+        <ul class="clean">
+          <li>정성 평가(레이더)는 리뷰 빈도 기반 추정치</li>
+          <li>지연시간은 환경·측정 방식에 따라 달라질 수 있음</li>
+          <li class="neg">구매 전 판매처 최종 가격·구성·A/S 직접 확인</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card anim" data-anim="fade-up" style="margin-top:16px">
+      <p style="font-size:0.5em;margin:0;color:var(--muted)">본 자료는 공개 리뷰를 수집·요약한 참고용이며, 특정 구매를 권유하지 않습니다.</p>
+    </div>
+  </section>
+
+  <!-- 13. 참고자료 -->
+  <section>
+    <div class="slide-title"><span class="idx">12</span><h2>주요 참고자료 (총 22건)</h2></div>
+    <div class="grid c2">
+      <div class="card small anim" data-anim="fade-up"><h3 style="font-size:0.9em">네이버 블로그</h3>
+        <p style="font-size:0.42em;color:var(--muted)">ojinbyeol · happygamer7966 · jrjrjr5562 · ballay58 · panjulove · ebrkhgyxwg · 717582 · legend1024 · tomeno00 · yonghoonplz(×2)</p>
+      </div>
+      <div class="card small anim" data-anim="fade-up"><h3 style="font-size:0.9em">중고거래 / 공방</h3>
+        <p style="font-size:0.42em;color:var(--muted)">번개장터(리오제작소·87HE v2) · 글로벌번개장터(RGB V2)</p>
+      </div>
+      <div class="card small anim" data-anim="fade-up"><h3 style="font-size:0.9em">영상 · 커뮤니티 · 측정</h3>
+        <p style="font-size:0.42em;color:var(--muted)">boardzy(YouTube) · Vortex Gaming · 코스티COSTI · Begin's Blog · RTINGS · 퀘이사존 · thaian</p>
+      </div>
+      <div class="card small anim" data-anim="fade-up"><h3 style="font-size:0.9em">전체 목록</h3>
+        <p style="font-size:0.42em">원문 URL 22건 전체는 대시보드 HTML <span style="color:var(--blue)">venom_keyboard_reviews.html</span> 참고</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14. 마무리 -->
+  <section class="cover" data-background-color="#0d1117">
+    <div class="anim" data-anim="fade-up">
+      <span class="eyebrow">End of Deck</span>
+      <h1 class="hero-title" style="font-size:2.6em">감사합니다</h1>
+      <p class="hero-sub">베놈 키보드 상품리뷰 조사 — 데이터·시각화·보고서 연계 산출물</p>
+      <div class="grid c3" style="margin-top:1em">
+        <div class="card small"><h3 style="font-size:0.8em">데이터</h3><p style="font-size:0.44em;color:var(--muted)">venom_keyboard_reviews.csv (23건)</p></div>
+        <div class="card small"><h3 style="font-size:0.8em">시각화</h3><p style="font-size:0.44em;color:var(--muted)">venom_keyboard_reviews.html</p></div>
+        <div class="card small"><h3 style="font-size:0.8em">보고서</h3><p style="font-size:0.44em;color:var(--muted)">venom_keyboard_review_report.md</p></div>
+      </div>
+      <div class="meta">조사일 2026-10-02 · 공개 리뷰 기반 요약 자료</div>
+    </div>
+  </section>
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<script src="js/deck.js"></script>
+</body>
+</html>
