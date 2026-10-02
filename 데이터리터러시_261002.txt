@@ -1,0 +1,30 @@
+FIRECRAWL_API_KEY=sk-8b296823cf1146c6ba85b30f4e790391 하고 나서 컨트롤+S(위에 둥근마크 사라져야함)
+우리집고양이가 랙돌인데 간식 가성비 좋고 인기 많은 상품들 여러개 후보 조사좀해줘 아까 설치한 스킬 사이트들 기반으로 조사해줘 csv로 남겨놔
+computer use 로 쿠팡들어가서 검증해줘
+2 skills available
+
+자료조사 or 검색 가성비 순
+firecrawl
+kskill
+computer use
+공식페이지 api - instagram api 직접 신청하고 일주일 뒤에 허가 후 사용가능. 대부분 외국사이트만 가능
+
+오늘의 실습내용 - 상품리뷰 csv로 정리하기
+
+토큰
+zrr.kr/aHCkgG
+오픈코드 키고 /connect - OrcaRouter - DeepSeek 적혀있는거 아무거나(flash추천)
+
+HTML slide 덱으로 만들고 싶다
+이미지 에셋은 nanobanana로 생성했으면 좋겠다
+데이터분석한 결과를 슬라이드로 만들어달라
+애니메이션과 그래프를 충분히 넣어달라
+깃허브 cli로 배포해달라 로그인이 필요하면 로그인 시켜줘
+
+1. ai studio 검색 - api 키 받기
+
+claude는 claudein chrome 써서 시킬 수 있음
+codex도 마찬가지로 가능
+무조건 되는 방법은 computer use. 내가 로그인해놓은 크롬을 써라 라고 프롬프트 써주면 됨.
+
+이걸 기반으로 HTML slide deck 을 만들고싶다. anime.js manim matplotlib 등으로 시각화 자료가 rich 했으면 좋겠다. 이미지에셋은 google flow 로그인해놨으니 이거 기반으로해라 그리고 항상 슬라이드 만들 때 계획을 먼저 짜고 만든 후 검증루프도 돌렸으면 좋겠다. 배포는 github cli로진행해서 pages에 올려줘.
