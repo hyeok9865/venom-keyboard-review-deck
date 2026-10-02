@@ -8,6 +8,8 @@ Geonworks VENOM HE(60HE / 80HE / 87HE) 키보드의 실제 사용자 리뷰 23�
 - 리뷰 대시보드: https://hyeok9865.github.io/venom-keyboard-review-deck/research/venom_keyboard_reviews.html
 - 조사 보고서: https://github.com/hyeok9865/venom-keyboard-review-deck/blob/main/research/venom_keyboard_review_report.md
 - 리포지토리: https://github.com/hyeok9865/venom-keyboard-review-deck
+- 작업 과정(HTML): https://hyeok9865.github.io/venom-keyboard-review-deck/process.html
+- 작업 과정(MD): [WORKLOG.md](WORKLOG.md)
 
 ## 오늘의 산출물 (research/)
 
